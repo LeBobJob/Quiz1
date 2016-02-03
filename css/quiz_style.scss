@@ -1,20 +1,30 @@
+//SASS VARIABLES
+
+$bg: aliceblue;
+$font: sans-serif;
+$obbi: oblique;
+$left: 50px;
+$pad: 10px;
+$darkerblue: #064277;
+$lighterblue: #58a0e0;
+
 /* Quiz styles */
 
 header {
-    border: 2px solid #064277;
+    border: 2px solid $darkerblue;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $pad;
+    background-color: $bg;
     text-align: center;
 }
 
 body {
     width: 600px;
     margin: auto;
-    font-family:sans-serif;
+    font-family:$font;
     font-size: 1em;
-    font-style:oblique;
+    font-style:$obbi;
     background-color: #dadadb
 }
 
@@ -24,30 +34,30 @@ h1 {
 }
 
 #content {
-    border: 2px solid #064277;
+    border: 2px solid $darkerblue;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $pad;
+    background-color: $bg;
 }
 
 #list{
-    border: 2px solid #064277;
+    border: 2px solid $darkerblue;
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: $bg;
 }
 
 h2 {
-    color: #064277;
+    color: $darkerblue;
 }
 
 h3 {
-    margin-left: 50px;
-    color:#58a0e0
+    margin-left: $left;
+    color:#58a0e0;
 }
 
 ul{
-    margin-left: 50px;
+    margin-left: $left;
 }
 
 p{
@@ -56,26 +66,34 @@ p{
 }
 
 .samplepara {
-    border: 3px solid #58a0e0;
+    border: 3px solid $lighterblue;
     border-radius: 5px;
-    padding: 10px;
+    padding: $pad;
     background-color: white;
 }
 
 footer {
-    border: 2px solid #064277;
+    border: 2px solid $darkerblue;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $pad;
+    background-color: $bg;
+    
+    #footer {
+        font-size: .75em;
+        font-style:italic;
+        font-weight: bold;
+        color: $darkerblue;
+        text-align: center;
+    }
 }
 
-#footer {
-    font-size: .75em;
-    font-style:italic;
-    font-weight: bold;
-    color: #064277;
-    text-align: center;
-}
+//#footer {
+//    font-size: .75em;
+//    font-style:italic;
+//    font-weight: bold;
+//    color: #064277;
+//    text-align: center;
+//}
 
 
