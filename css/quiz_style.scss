@@ -8,6 +8,7 @@ $pad: 10px;
 $darkerblue: #064277;
 $lighterblue: #58a0e0;
 
+
 /* Quiz styles */
 
 header {
@@ -22,10 +23,12 @@ header {
 body {
     width: 600px;
     margin: auto;
-    font-family:$font;
-    font-size: 1em;
-    font-style:$obbi;
-    background-color: #dadadb
+    font: {
+        family: $font;
+        size: 1em;
+        style: $obbi;
+    }  
+    background-color: #dadadb;
 }
 
 
@@ -80,9 +83,11 @@ footer {
     background-color: $bg;
     
     #footer {
-        font-size: .75em;
-        font-style:italic;
-        font-weight: bold;
+        font: {
+            size: .75em;
+            style:italic;
+            weight: bold;
+        }
         color: $darkerblue;
         text-align: center;
     }
